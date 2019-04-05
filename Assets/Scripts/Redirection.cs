@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class redirection : MonoBehaviour {
+public class Redirection : MonoBehaviour {
 
 	public Transform player;
 	public Transform centerEye;
@@ -23,6 +23,18 @@ public class redirection : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		counter++;
+	}
+
+	public void SetLeftRotationFactor(float lf) {
+		leftFactor = lf / 10;
+	}
+
+	public void SetRightRotationFactor(float rf) {
+		rightFactor = rf / 10;
+	}
+
+	public void SetSpin(float spin) {
+		constantRotationDegrees = spin;
 	}
 
 	void FixedUpdate() {

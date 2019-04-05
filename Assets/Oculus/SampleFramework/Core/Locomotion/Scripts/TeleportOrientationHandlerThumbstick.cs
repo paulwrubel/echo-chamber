@@ -48,7 +48,11 @@ public class TeleportOrientationHandlerThumbstick : TeleportOrientationHandler
 	{
         float magnitude;
         Vector2 direction;
-        if (Thumbstick == OVRInput.Controller.Touch)
+		if (OrientationMode == OrientationModes.HeadControlled) {
+			magnitude = 0;
+			direction = new Vector2(0, 1);
+		}
+        else if (Thumbstick == OVRInput.Controller.Touch)
         {
             Vector2 leftDir = OVRInput.Get(OVRInput.RawAxis2D.LThumbstick);
             Vector2 rightDir = OVRInput.Get(OVRInput.RawAxis2D.RThumbstick);

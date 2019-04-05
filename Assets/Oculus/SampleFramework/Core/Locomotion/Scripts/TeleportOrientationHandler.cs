@@ -81,12 +81,13 @@ public abstract class TeleportOrientationHandler : TeleportSupport
 		/// indicator, and will need to rotated the HMD view to match the indicated direction. Once rotated, the player will be facing 
 		/// forward to the Oculus sensors.
 		/// </summary>
-		ForwardFacing
+		ForwardFacing,
+		HeadControlled
 	}
 
 	protected Quaternion GetLandingOrientation(OrientationModes mode, Quaternion rotation)
 	{
-		return mode == OrientationModes.HeadRelative
+		return mode == OrientationModes.HeadRelative || mode == OrientationModes.HeadControlled
 			? rotation
 			: rotation * Quaternion.Euler(0,
 				  -LocomotionTeleport.LocomotionController.CameraRig.trackingSpace.localEulerAngles.y, 0);
