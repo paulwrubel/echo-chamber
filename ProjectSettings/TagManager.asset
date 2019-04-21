@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Ball
+=======
+  - QuestBall
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
   layers:
   - Default
   - TransparentFX
@@ -14,11 +18,19 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - Player
   - PhysicMoveThrough
   - PhysicCollide
   - 
   - 
+=======
+  - PostProcessing
+  - PhysicsMoveThrough
+  - PhysicsCollide
+  - Player
+  - Hands
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
   - 
   - 
   - 

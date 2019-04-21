@@ -165,7 +165,10 @@ public class OVRGrabber : MonoBehaviour
 		OVRGrabbable grabbable = otherCollider.GetComponent<OVRGrabbable>() ?? otherCollider.GetComponentInParent<OVRGrabbable>();
         if (grabbable == null) return;
 
+<<<<<<< HEAD
         print("entered");
+=======
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
         // Add the grabbable
         int refCount = 0;
         m_grabCandidates.TryGetValue(grabbable, out refCount);

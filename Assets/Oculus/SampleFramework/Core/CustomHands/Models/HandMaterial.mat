@@ -4,10 +4,18 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: HandMaterial
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HandMaterial
+  m_Shader: {fileID: 4800000, guid: e78db4fab1ac74627bc038fe6c3edef8, type: 3}
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -66,6 +74,10 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+<<<<<<< HEAD
+=======
+    - _RimPower: 3
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -74,3 +86,8 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+<<<<<<< HEAD
+=======
+    - _InnerColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.26, g: 0.19, b: 0.16, a: 0}
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed

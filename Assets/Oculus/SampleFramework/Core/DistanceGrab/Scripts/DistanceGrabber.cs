@@ -234,21 +234,30 @@ namespace OculusSampleFramework
             dgOut = null;
             collOut = null;
             float closestMagSq = float.MaxValue;
+<<<<<<< HEAD
             print("finding target");
+=======
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
 
             // First test for objects within the grab volume, if we're using those.
             // (Some usage of DistanceGrabber will not use grab volumes, and will only 
             // use spherecasts, and that's supported.)
             foreach (OVRGrabbable cg in m_grabCandidates.Keys)
             {
+<<<<<<< HEAD
                 print("looping!");
+=======
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
                 DistanceGrabbable grabbable = cg as DistanceGrabbable;
                 bool canGrab = grabbable != null && grabbable.InRange && !(grabbable.isGrabbed && !grabbable.allowOffhandGrab);
                 if (!canGrab)
                 {
                     continue;
                 }
+<<<<<<< HEAD
                 print("we can grab!");
+=======
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
 
                 for (int j = 0; j < grabbable.grabPoints.Length; ++j)
                 {
@@ -280,7 +289,10 @@ namespace OculusSampleFramework
                         }
                         if(accept)
                         {
+<<<<<<< HEAD
                             print("we got em bois");
+=======
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
                             closestMagSq = grabbableMagSq;
                             dgOut = grabbable;
                             collOut = grabbableCollider;

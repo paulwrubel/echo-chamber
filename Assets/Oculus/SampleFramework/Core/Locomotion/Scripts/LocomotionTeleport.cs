@@ -359,8 +359,14 @@ public class LocomotionTeleport : MonoBehaviour
 	/// </summary>
 	protected void CreateNewTeleportDestination()
 	{
+<<<<<<< HEAD
 		TeleportDestinationPrefab.gameObject.SetActive(false); // ensure the prefab isn't active in order to delay event handler setup until after it has been configured with a reference to this object.
 		TeleportDestination td = GameObject.Instantiate(TeleportDestinationPrefab);
+=======
+		TeleportDestination td;
+		TeleportDestinationPrefab.gameObject.SetActive(false); // ensure the prefab isn't active in order to delay event handler setup until after it has been configured with a reference to this object.
+		td = GameObject.Instantiate(TeleportDestinationPrefab);
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
 		td.LocomotionTeleport = this;
 		_teleportDestination = td;
 		_teleportDestination.LocomotionTeleport = this;
@@ -768,7 +774,12 @@ public class LocomotionTeleport : MonoBehaviour
 
 		Vector3 destPosition = destTransform.position;
 		destPosition.y += character.height * 0.5f;
+<<<<<<< HEAD
 		Quaternion destRotation = _teleportDestination.LandingRotation;// destTransform.rotation;
+=======
+		Quaternion destRotation;
+		destRotation = _teleportDestination.LandingRotation;// destTransform.rotation;
+>>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
 #if false
 		Quaternion destRotation = destTransform.rotation;
 
