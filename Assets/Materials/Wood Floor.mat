@@ -5,12 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-<<<<<<< HEAD
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-=======
-  m_PrefabInternal: {fileID: 0}
->>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
   m_Name: Wood Floor
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
@@ -41,19 +37,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-<<<<<<< HEAD
         m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: a2b3bc76d32b27e409ab829472368d88, type: 3}
         m_Scale: {x: 10, y: 10}
-=======
-        m_Scale: {x: 5, y: 5}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a2b3bc76d32b27e409ab829472368d88, type: 3}
-        m_Scale: {x: 5, y: 5}
->>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: cb9d2bab4c967e74f9f1433ea81dcb82, type: 3}

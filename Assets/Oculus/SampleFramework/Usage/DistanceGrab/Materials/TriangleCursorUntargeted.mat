@@ -4,14 +4,8 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-<<<<<<< HEAD
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-=======
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
   m_Name: TriangleCursorUntargeted
   m_Shader: {fileID: 4800000, guid: 322c8bbfbbd774b33a90cac7d144bfe7, type: 3}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION

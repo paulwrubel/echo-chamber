@@ -3,13 +3,8 @@
 --- !u!55 &1
 PhysicsManager:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD
   serializedVersion: 13
   m_Gravity: {x: 0, y: -9.81, z: 0}
-=======
-  serializedVersion: 10
-  m_Gravity: {x: 0, y: -6, z: 0}
->>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
   m_DefaultMaterial: {fileID: 0}
   m_BounceThreshold: 2
   m_SleepThreshold: 0.005
@@ -22,20 +17,12 @@ PhysicsManager:
   m_ClothInterCollisionDistance: 0
   m_ClothInterCollisionStiffness: 0
   m_ContactsGeneration: 1
-<<<<<<< HEAD
   m_LayerCollisionMatrix: fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdfffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   m_AutoSimulation: 1
   m_AutoSyncTransforms: 0
   m_ReuseCollisionCallbacks: 1
   m_ClothInterCollisionSettingsToggle: 0
   m_ClothGravity: {x: 0, y: -9.81, z: 0}
-=======
-  m_LayerCollisionMatrix: fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7fffffffffffffffdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-  m_AutoSimulation: 1
-  m_AutoSyncTransforms: 1
-  m_ReuseCollisionCallbacks: 0
-  m_ClothInterCollisionSettingsToggle: 0
->>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
   m_ContactPairsMode: 0
   m_BroadphaseType: 0
   m_WorldBounds:
@@ -45,7 +32,4 @@ PhysicsManager:
   m_FrictionType: 0
   m_EnableEnhancedDeterminism: 0
   m_EnableUnifiedHeightmaps: 1
-<<<<<<< HEAD
   m_DefaultMaxAngularSpeed: 7
-=======
->>>>>>> 59cad8d86aeb6280c08cc696598f6ef6891bebed
