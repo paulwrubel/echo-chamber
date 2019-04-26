@@ -6,12 +6,13 @@ public class Redirection : MonoBehaviour {
 
 	public Transform player;
 	public Transform centerEye;
+	public GameObject[] activators;
 	public float constantRotationDegrees = 0;
-	public float cyclicRotationDegrees = 0;
-	public float cycleSpeed = 0.1f;
 	public float leftFactor = 1.0f;
 	public float rightFactor = 1.0f;
-	private int counter = 0;
+	public float deltaConstantRotationDegrees = 0;
+	public float deltaLeftFactor = 0;
+	public float deltaRightFactor = 0;
 	private float oldYRotation = 0;
 
 
@@ -22,24 +23,16 @@ public class Redirection : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		counter++;
-	}
-
-	public void SetLeftRotationFactor(float lf) {
-		leftFactor = lf / 10;
-	}
-
-	public void SetRightRotationFactor(float rf) {
-		rightFactor = rf / 10;
-	}
-
-	public void SetSpin(float spin) {
-		constantRotationDegrees = spin;
+		int sum = SumActivations();
+		if (sum != activators.Length) {
+			constantRotationDegrees = sum * deltaConstantRotationDegrees;
+			leftFactor = 1 + (sum * deltaLeftFactor);
+			rightFactor = 1 + (sum * deltaRightFactor);
+		}
 	}
 
 	void FixedUpdate() {
 
-		transform.RotateAround(player.position, Vector3.up, cyclicRotationDegrees * Mathf.Sin(counter*(cycleSpeed/100)) * Time.fixedDeltaTime);
 		transform.RotateAround(player.position, Vector3.up, constantRotationDegrees * Time.fixedDeltaTime);
 		
 		//print(centerEye.localRotation.eulerAngles.y);
@@ -60,4 +53,26 @@ public class Redirection : MonoBehaviour {
 	void LateUpdate() {
 		oldYRotation = centerEye.localRotation.eulerAngles.y;
 	}
+
+	public void SetLeftRotationFactor(float lf) {
+		leftFactor = lf / 10;
+	}
+
+	public void SetRightRotationFactor(float rf) {
+		rightFactor = rf / 10;
+	}
+
+	public void SetSpin(float spin) {
+		constantRotationDegrees = spin;
+	}
+
+	private int SumActivations() {
+        int count = 0;
+        foreach(GameObject a in activators) {
+            if (a.GetComponent<BoxTrigger>().activated) {
+                count++;
+            }
+        }
+        return count;
+    }
 }

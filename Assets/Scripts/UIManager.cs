@@ -19,7 +19,6 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         if (OVRInput.GetDown(menuToggleButton)) {
-            print("bing bong 1");
             GetComponent<Canvas>().enabled = !GetComponent<Canvas>().enabled;
             GetComponent<CanvasScaler>().enabled = !GetComponent<CanvasScaler>().enabled;
         }
